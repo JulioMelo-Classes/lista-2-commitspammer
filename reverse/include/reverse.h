@@ -10,14 +10,24 @@ using std::sort;
 
 namespace graal {
 
-/*! 
- * TODO: documentação no estilo doxygen
+/*!
+ * @brief Reverses the order of elements inside [first,last) range.
+ * @tparam BidirIt Iterator type.
+ * @param first Iterator pointing to range's first element.
+ * @param last Iterator pointing to position after range's last element.
+ * @return Void.
  */
 template<class BidirIt>
 void reverse(BidirIt first, BidirIt last)
 {
-    // TODO
+	--last;
+	while (std::distance(first, last) > 0) {
+		std::swap(*first, *last);
+		++first;
+		--last;
+	}
 }
 
 }
 #endif
+
