@@ -10,7 +10,7 @@ using std::sort;
 
 namespace graal {
 
-/*! 
+/*!
  * Exemplo de documentação seguindo o formato Doxygen
  *
  * @tparam Itr iterator para o range.
@@ -23,12 +23,21 @@ namespace graal {
  * @return Um std::pair contendo o menor e maior elemento, nesta ordem
  *
  */
-template <typename Itr, typename Compare >
-std::pair<Itr, Itr> minmax( Itr first, Itr last, Compare cmp )
+template <typename Itr, typename Compare>
+std::pair<Itr, Itr> minmax(Itr first, Itr last, Compare cmp)
 {
-    // TODO
-    return std::make_pair( first, first );
+	Itr min {first};
+	Itr max {first};
+	while (first != last) {
+		if (cmp(*first, *min))
+			min = first;
+		if (!cmp(*first, *max))
+			max = first;
+		++first;
+	}
+	return std::make_pair(min, max);
 }
 
 }
 #endif
+
