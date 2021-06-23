@@ -21,9 +21,8 @@ namespace graal {
  * @param cmp A função de comparação que retorna true quando o primeiro parâmetro é menor do que o segundo
  *
  * @return Um std::pair contendo o menor e maior elemento, nesta ordem
- *
  */
-template <typename Itr, typename Compare>
+template<typename Itr, typename Compare>
 std::pair<Itr, Itr> minmax(Itr first, Itr last, Compare cmp)
 {
 	Itr min {first};
@@ -35,7 +34,7 @@ std::pair<Itr, Itr> minmax(Itr first, Itr last, Compare cmp)
 			max = first;
 		++first;
 	}
-	return std::make_pair(min, max);
+	return std::pair(min, max);
 }
 
 }
