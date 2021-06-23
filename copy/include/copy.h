@@ -27,7 +27,7 @@ InputIt copy(InputIt first, InputIt last, InputIt d_first)
 		++first;
 		++d_first;
 	}
-	return d_first + 1;
+	return d_first;
 }
 
 }
