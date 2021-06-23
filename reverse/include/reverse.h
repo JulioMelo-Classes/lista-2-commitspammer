@@ -21,7 +21,7 @@ template<class BidirIt>
 void reverse(BidirIt first, BidirIt last)
 {
 	--last;
-	while (std::distance(first, last) > 0) {
+	while (first < last) {
 		std::swap(*first, *last);
 		++first;
 		--last;
