@@ -31,8 +31,10 @@ ForwardIt rotate(ForwardIt first, ForwardIt n_first, ForwardIt last)
 			std::swap(*tmp, *(tmp+1));
 			++tmp;
 		}
-		if (og_first)
-		++og_first;
+		if (og_first < last-1)
+			++og_first;
+		else
+			og_first = first;
 	}
 	//P.S.: This is inefficient lol
 	return og_first;
