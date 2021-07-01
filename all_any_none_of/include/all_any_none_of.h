@@ -19,6 +19,9 @@ namespace graal {
  * @param p Function object used for checking condition.
  * @return true if all elements meet the condition, or false if not.
  */
+ /*
+ blz
+ */
 template<class InputIt, class UnaryPredicate>
 bool all_of(InputIt first, InputIt last, UnaryPredicate p)
 {

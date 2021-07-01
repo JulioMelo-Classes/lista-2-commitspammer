@@ -19,6 +19,9 @@ namespace graal {
  * @param last Iterator pointing to position after range's last element.
  * @return Iterator pointing to original first element.
  */
+ /*
+ blz
+ */
 template<class ForwardIt>
 ForwardIt rotate(ForwardIt first, ForwardIt n_first, ForwardIt last)
 {
@@ -36,7 +39,9 @@ ForwardIt rotate(ForwardIt first, ForwardIt n_first, ForwardIt last)
 		else
 			og_first = first;
 	}
-	//P.S.: This is inefficient lol
+	//P.S.: This is inefficient lol yup!
+	//uma forma de fazer mais eficiente era vc mapear as novas posições do vetor rotacionado através da distancia entre o primeiro elemento e o n_first
+	//assim vc precisaria apenas de O(n) swaps entre os elementos
 	return og_first;
 }
 

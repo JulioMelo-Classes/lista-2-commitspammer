@@ -21,7 +21,9 @@ namespace graal {
  * @return Iterator pointing to position after last element that meets
  * predicate p.
  */
-
+/*
+blz
+*/
 template<class ForwardIt, class UnaryPredicate>
 ForwardIt partition(ForwardIt first, ForwardIt last, UnaryPredicate p)
 {

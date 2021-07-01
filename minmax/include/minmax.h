@@ -22,6 +22,9 @@ namespace graal {
  *
  * @return Um std::pair contendo o menor e maior elemento, nesta ordem
  */
+ /*
+ ok
+ */
 template<typename Itr, typename Compare>
 std::pair<Itr, Itr> minmax(Itr first, Itr last, Compare cmp)
 {
@@ -34,7 +37,7 @@ std::pair<Itr, Itr> minmax(Itr first, Itr last, Compare cmp)
 			max = first;
 		++first;
 	}
-	return std::pair(min, max);
+	return std::pair<Itr,Itr>(min, max); //aqui teve um erro de compilação, vc poderia retornar {min,max} ou tipar o pair, provavelmente seu compilador deixou passar com um warning
 }
 
 }

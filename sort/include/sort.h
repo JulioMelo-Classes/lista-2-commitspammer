@@ -19,6 +19,9 @@ namespace graal {
  * @param last Iterator pointing to position after range's last element.
  * @param cmp Function object used for comparing values.
  */
+ /*
+ ok
+ */
 template<class ForwardIt, class Comparison>
 void sort(ForwardIt first, ForwardIt last, Comparison cmp)
 {

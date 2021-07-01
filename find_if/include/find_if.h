@@ -21,6 +21,9 @@ namespace graal {
  * @return Iterator pointing to first element found, or to last if no
  * element was found.
  */
+ /*
+ ok
+ */
 template<class InputIt, class UnaryPredicate>
 InputIt find_if(InputIt first, InputIt last, UnaryPredicate p)
 {

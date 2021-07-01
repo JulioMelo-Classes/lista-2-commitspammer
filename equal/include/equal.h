@@ -23,6 +23,9 @@ namespace graal {
  * @param eq Function object used for comparing values.
  * @return true if both ranges have the same elements, or false if not.
  */
+ /*
+ ok!
+ */
 template<class InputIt1, class InputIt2, class Equal>
 bool equal(InputIt1 first1, InputIt1 last1, InputIt2 first2, Equal eq)
 {

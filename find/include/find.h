@@ -23,6 +23,9 @@ namespace graal {
  * @return Iterator pointing to first element found, or to last if no
  * element was found.
  */
+ /*
+ ok
+ */
 template<class InputIt, class T, class Equal>
 InputIt find(InputIt first, InputIt last, const T& value, Equal eq)
 {

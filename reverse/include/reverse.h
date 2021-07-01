@@ -17,6 +17,9 @@ namespace graal {
  * @param last Iterator pointing to position after range's last element.
  * @return Void.
  */
+ /*
+ok! não precisa documentar quando não tem retorno
+ */
 template<class BidirIt>
 void reverse(BidirIt first, BidirIt last)
 {

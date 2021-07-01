@@ -19,6 +19,9 @@ namespace graal {
  * @param eq Function object used for comparing values.
  * @return Iterator pointing to position after range's new last element;
  */
+ /*
+ ok
+ */
 template<class InputIt, class Equal>
 InputIt unique(InputIt first, InputIt last, Equal eq)
 {
